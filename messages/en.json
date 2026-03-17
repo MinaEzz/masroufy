@@ -1,0 +1,36 @@
+{
+  "Navigation": {
+    "appName": "Masroufy",
+    "dashboard": "Dashboard",
+    "wallets": "Wallets",
+    "transactions": "Transactions",
+    "settings": "Settings"
+  },
+  "Auth": {
+    "loginTitle": "Sign In",
+    "loginSubtitle": "Welcome back! Enter your credentials to continue.",
+    "registerTitle": "Create Account",
+    "registerSubtitle": "Join Masroufy and start tracking your finances.",
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Min. 6 characters",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Repeat your password",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "loading": "Please wait...",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "Validation": {
+    "invalidEmail": "Please enter a valid email address.",
+    "passwordTooShort": "Password must be at least 6 characters.",
+    "nameTooShort": "Name must be at least 2 characters.",
+    "passwordMismatch": "Passwords do not match."
+  }
+}

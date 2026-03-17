@@ -1,0 +1,36 @@
+{
+  "Navigation": {
+    "appName": "مصروفي",
+    "dashboard": "لوحة التحكم",
+    "wallets": "المحافظ",
+    "transactions": "العمليات",
+    "settings": "الإعدادات"
+  },
+  "Auth": {
+    "loginTitle": "تسجيل الدخول",
+    "loginSubtitle": "مرحباً بعودتك! أدخل بياناتك للمتابعة.",
+    "registerTitle": "إنشاء حساب",
+    "registerSubtitle": "انضم لمصروفي وابدأ في تتبع أموالك.",
+    "name": "الاسم الكامل",
+    "namePlaceholder": "أحمد محمد",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "example@email.com",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "6 أحرف على الأقل",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "confirmPasswordPlaceholder": "أعد كتابة كلمة المرور",
+    "loginButton": "تسجيل الدخول",
+    "registerButton": "إنشاء الحساب",
+    "loading": "جارٍ المعالجة...",
+    "noAccount": "ليس لديك حساب؟",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "signUp": "سجّل الآن",
+    "signIn": "تسجيل الدخول"
+  },
+  "Validation": {
+    "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح.",
+    "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل.",
+    "nameTooShort": "يجب أن يكون الاسم حرفين على الأقل.",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين."
+  }
+}
