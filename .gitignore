@@ -40,9 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/techStack.md
-/projectBreif.md 
-/brandGuidlines.md 
-/claude.md 
-/gemini.md 
-/prompts.txt
+techStack.md
+projectBreif.md 
+brandGuidlines.md 
+claude.md 
+gemini.md 
+prompts.txt
