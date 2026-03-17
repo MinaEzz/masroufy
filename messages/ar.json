@@ -27,6 +27,27 @@
     "signUp": "سجّل الآن",
     "signIn": "تسجيل الدخول"
   },
+  "Dashboard": {
+    "netWorthTitle": "إجمالي الرصيد (Net Worth)",
+    "netWorthDesc": "المبلغ المتاح في جميع المحافظ",
+    "myWallets": "محافظي",
+    "noWallets": "لا توجد محافظ لتسجيلها بعد.",
+    "recentTransactions": "أحدث العمليات",
+    "noTransactions": "لا توجد حركات مالية مسجلة.",
+    "addTransaction": "إضافة عملية",
+    "addTransactionDesc": "أضف عملية مالية جديدة وحافظ على تتبع مصاريفك.",
+    "income": "دخل (+)",
+    "expense": "مصروف (-)",
+    "transfer": "تحويل (⇄)",
+    "notePlaceholder": "ملاحظة (اختياري)...",
+    "save": "حفظ العملية"
+  },
+  "categories": {
+    "food": "طعام",
+    "transport": "مواصلات",
+    "salary": "راتب",
+    "shopping": "تسوق"
+  },
   "Validation": {
     "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح.",
     "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل.",

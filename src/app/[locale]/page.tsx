@@ -1,12 +1,18 @@
-import { useTranslations } from "next-intl";
+import { redirect } from "@/i18n/routing";
 
-export default function HomePage() {
-  const t = useTranslations("Navigation");
+export default async function RootPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  
+  // MOCK AUTH CHECK (TODO: Replace with actual NextAuth session check)
+  const isLoggedIn = true;
 
-  return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
-      <h1 className="text-4xl font-bold text-primary">{t("appName")}</h1>
-      <p className="text-muted-foreground">Welcome to your dashboard!</p>
-    </div>
-  );
+  if (isLoggedIn) {
+    redirect({ href: "/dashboard", locale });
+  } else {
+    redirect({ href: "/login", locale });
+  }
 }

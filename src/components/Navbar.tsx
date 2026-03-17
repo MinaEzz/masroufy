@@ -1,9 +1,8 @@
 "use client";
 
-import * as React from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
-import { Moon, Sun, Globe } from "lucide-react";
+import { Moon, Sun, Globe, WalletMinimal } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -25,27 +24,44 @@ export default function Navbar() {
     router.replace(pathname, { locale: newLocale });
   };
 
+  const navLinks = [
+    { name: t("dashboard"), href: "/dashboard" },
+    { name: t("wallets"), href: "/wallets" },
+    { name: t("transactions"), href: "/transactions" },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 md:px-8 mx-auto">
+        {/* Logo / Brand */}
         <div className="flex items-center gap-6">
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold text-xl text-primary">{t("appName")}</span>
+          <Link href="/dashboard" className="flex items-center space-x-2 text-primary">
+            <WalletMinimal className="h-6 w-6" />
+            <span className="font-bold sm:inline-block text-xl tracking-tight">
+              {t("appName")}
+            </span>
           </Link>
-          
+
+          {/* Desktop Nav Links */}
           <div className="hidden md:flex gap-4">
-            <Link href="/" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-              {t("dashboard")}
-            </Link>
-            <Link href="/" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-              {t("wallets")}
-            </Link>
-            <Link href="/" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-              {t("transactions")}
-            </Link>
+            {navLinks.map((link) => {
+              const isActive = pathname.startsWith(link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-sm font-medium transition-colors hover:text-foreground ${
+                    isActive ? "text-primary shadow-[0_1px_0_0_#10b981]" : "text-muted-foreground"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
+        {/* Actions (Language + Theme Switcher) */}
         <div className="flex items-center gap-2">
           {/* Language Switcher */}
           <DropdownMenu>

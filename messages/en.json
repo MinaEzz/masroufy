@@ -27,6 +27,27 @@
     "signUp": "Sign Up",
     "signIn": "Sign In"
   },
+  "Dashboard": {
+    "netWorthTitle": "Total Net Worth",
+    "netWorthDesc": "Available balance across all wallets",
+    "myWallets": "My Wallets",
+    "noWallets": "No wallets created yet.",
+    "recentTransactions": "Recent Transactions",
+    "noTransactions": "No financial operations recorded.",
+    "addTransaction": "Add Transaction",
+    "addTransactionDesc": "Record a new transaction to track your finances.",
+    "income": "Income (+)",
+    "expense": "Expense (-)",
+    "transfer": "Transfer (⇄)",
+    "notePlaceholder": "Note (optional)...",
+    "save": "Save Transaction"
+  },
+  "categories": {
+    "food": "Food",
+    "transport": "Transport",
+    "salary": "Salary",
+    "shopping": "Shopping"
+  },
   "Validation": {
     "invalidEmail": "Please enter a valid email address.",
     "passwordTooShort": "Password must be at least 6 characters.",
